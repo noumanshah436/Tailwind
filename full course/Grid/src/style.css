@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .video {
+    @apply px-12 py-14 bg-gray-200 text-center shadow-md;
+  }
+}
+
+@layer utilities {
+  .grid-custom {
+    grid-template-columns: repeat(3, minmax(0, max-content));
+  }
+}

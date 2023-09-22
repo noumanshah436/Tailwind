@@ -1,0 +1,26 @@
+
+https://tailwindcss.com/docs/guides/vite#react
+https://github.com/tailwindlabs/tailwindcss-forms     -- plugin for
+
+
+1) npm create vite@latest my-project    ( and select vanilla javascript)
+2) cd my-project
+
+
+3) npm install -D tailwindcss postcss autoprefixer @tailwindcss/forms
+4) npx tailwindcss init -p
+
+5)  add plugins and content in tailwind.config.js
+
+6) create style.css and import it in main.js
+
+7) npm run dev
+
+**************************
+
+
+icons
+
+https://heroicons.com/
+
+**************************

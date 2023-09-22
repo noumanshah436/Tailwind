@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+.componentsafter{
+    text-align: center;
+}
+@tailwind utilities;
+
+@layer utilities{
+    /* this will add the btn class to the end of utilities layer */
+    .btn{
+        @apply text-white bg-red-600 rounded-xl px-2 py-1 text-sm;
+    }
+}
+
+
+/*
+
+@layer is used to add classes to a particular layer,
+this will add the given classes to the end of this layer
+
+*/

@@ -1,0 +1,343 @@
+
+<!DOCTYPE html>
+
+<head>
+	<meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid Alignment</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+	<!-- <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"	rel="stylesheet"> -->
+
+  <style>
+    .grid-custom {
+        grid-template-columns: repeat(3, minmax(0, max-content));
+    }
+  </style>
+</head>
+
+
+<!--
+
+  Justify Items  --   Horizontal ALignment within grid cells  (  justify-items-start	  )
+  Align Items   ---   Vertical ALignment within grid cells     (  items-start	 )
+
+  Justify Content ---  Justify whole grid in Horizontal direction   ( justify-start	 )
+  Align Content  ---  Justify whole grid in vertical direction     ( content-start	  )
+ -->
+<body class="text-center w-full" >
+
+
+   <h1 class="text-green-600 text-5xl my-4">GeeksforGeeks</h1>
+    <b>Tailwind CSS grid-cols Class</b>
+    <div class="grid grid-cols-3 gap-1 bg-red-200 m-5">
+      <div class="w-16 h-16 bg-yellow-500">1</div>
+      <div class="w-16 h-16 bg-red-500">2</div>
+      <div class="w-16 h-16 bg-pink-500">3</div>
+      <div class="w-16 h-16 bg-pink-500">3</div>
+    </div>
+
+    <!-- ****************************** -->
+    <!--
+        Justify Items
+        Horizontal ALignment within grid cells
+        Utilities for controlling how grid items are aligned along their inline axis.
+
+        justify-items-start	    justify-items: start;
+        justify-items-end	      justify-items: end;
+        justify-items-center	  justify-items: center;
+        justify-items-stretch	  justify-items: stretch;     -- default
+     -->
+    <h1 class="text-green-600 text-5xl my-4"> Justify Items (  Horizontal ALignment within grid cells )</h1>
+    <b>justify-items-start</b>
+    <div class="grid grid-cols-3 justify-items-start bg-red-200 m-5">
+      <div class="w-16 h-16 bg-yellow-500">1</div>
+      <div class="w-16 h-16 bg-red-500">2</div>
+      <div class="w-16 h-16 bg-pink-500">3</div>
+      <div class="w-16 h-16 bg-pink-500">3</div>
+    </div>
+
+    <b>justify-items-center</b>
+    <div class="grid grid-cols-3 justify-items-center bg-red-200 m-5">
+      <div class="w-16 h-16 bg-yellow-500">1</div>
+      <div class="w-16 h-16 bg-red-500">2</div>
+      <div class="w-16 h-16 bg-pink-500">3</div>
+      <div class="w-16 h-16 bg-pink-500">3</div>
+    </div>
+
+    <b>justify-items-end	</b>
+    <div class="grid grid-cols-3  justify-items-end bg-red-200 m-5">
+      <div class="w-16 h-16 bg-yellow-500">1</div>
+      <div class="w-16 h-16 bg-red-500">2</div>
+      <div class="w-16 h-16 bg-pink-500">3</div>
+      <div class="w-16 h-16 bg-pink-500">3</div>
+    </div>
+
+    <b>justify-items-stretch</b>
+    <div class="grid grid-cols-3 justify-items-stretch  bg-red-200 m-5">
+      <div class="w-16 h-16 bg-yellow-500">1</div>
+      <div class="w-16 h-16 bg-red-500">2</div>
+      <div class="w-16 h-16 bg-pink-500">3</div>
+      <div class=" h-16 bg-yellow-500">1</div>
+      <div class=" h-16 bg-red-500">2</div>
+      <div class=" h-16 bg-pink-500">3</div>
+    </div>
+
+    <!-- ****************************** -->
+    <!--
+      Align Items
+      Vertical ALignment within grid cells
+      Utilities for controlling how flex and grid items are positioned along a container's cross axis.
+
+        ​
+        items-start	        align-items: flex-start;
+        items-end	          align-items: flex-end;
+        items-center	      align-items: center;
+        items-baseline	    align-items: baseline;
+        items-stretch	      align-items: stretch;
+     -->
+    <h1 class="text-green-600 text-5xl my-4">Align Items ( Vertical ALignment within grid cells )</h1>
+    <b>items-start</b>
+    <div class="h-80 grid grid-cols-3 gap-4 items-start bg-red-200 m-5">
+      <div class="w-full h-16 bg-yellow-500">1</div>
+      <div class="w-full h-16 bg-red-500">2</div>
+      <div class="w-full h-16 bg-pink-500">3</div>
+      <div class="w-full h-16 bg-pink-500">4</div>
+      <div class="w-full h-16 bg-pink-500">5</div>
+      <div class="w-full h-16 bg-pink-500">6</div>
+    </div>
+
+    <b>items-end</b>
+    <div class="h-80 grid grid-cols-3 gap-4 items-end bg-red-200 m-5">
+      <div class=" w-full h-16 bg-yellow-500">1</div>
+      <div class="w-full h-16 bg-red-500">2</div>
+      <div class="w-full h-16 bg-pink-500">3</div>
+      <div class="w-full h-16 bg-pink-500">4</div>
+      <div class="w-full h-16 bg-pink-500">5</div>
+      <div class="w-full h-16 bg-pink-500">6</div>
+    </div>
+
+    <b>items-center</b>
+    <div class="h-80 grid grid-cols-3 gap-4 items-center bg-red-200 m-5">
+      <div class="  h-16 bg-yellow-500">1</div>
+      <div class="w-full h-16 bg-red-500">2</div>
+      <div class="w-full h-16 bg-pink-500">3</div>
+      <div class="w-full h-16 bg-pink-500">4</div>
+      <div class="w-full h-16 bg-pink-500">5</div>
+      <div class="w-full h-16 bg-pink-500">6</div>
+    </div>
+
+    <b>items-baseline</b>
+    <div class="h-80 grid grid-cols-3 gap-4  bg-red-200 m-5">
+      <div class=" h-full bg-slate-500">1</div>
+      <div class="w-full h-16 bg-red-500">2</div>
+      <div class="w-full h-16 bg-pink-500">3</div>
+      <div class="w-full h-16 bg-pink-500">4</div>
+      <div class="w-full h-16 bg-pink-500">5</div>
+      <div class="w-full h-16 bg-pink-500">6</div>
+    </div>
+
+
+    <!-- ****************************** -->
+    <!--
+        Justify Content
+        Justify whole grid in Horizontal direction
+        Utilities for controlling how flex and grid items are positioned along a container's main axis.
+
+        grid-cols-3  makes sure that ( no matter what) each grid column is one fraction in width,
+        so these properties would'nt apply if grid is one fraction
+        ​
+        justify-start	        justify-content: flex-start;
+        justify-end	          justify-content: flex-end;
+        justify-center	      justify-content: center;
+        justify-between	      justify-content: space-between;
+        justify-around	      justify-content: space-around;
+        justify-evenly	      justify-content: space-evenly;
+     -->
+    <h1 class="text-green-600 text-5xl my-4">Justify Content(Justify whole grid in Horizontal direction)</h1>
+    <b>justify-start</b>
+    <div class=" grid grid-custom gap-4 justify-start	 bg-red-200 m-5">
+      <div class="h-16 w-16  bg-yellow-500">1</div>
+      <div class="h-16 w-16  bg-red-500">2</div>
+      <div class=" h-16 w-16 bg-pink-500">3</div>
+      <div class=" h-16 w-16 bg-pink-500">4</div>
+      <div class=" h-16 w-16 bg-pink-500">5</div>
+      <div class=" h-16 w-16 bg-pink-500">6</div>
+    </div>
+
+    <b>justify-center</b>
+    <div class=" grid grid-custom gap-4 justify-center	 bg-red-200 m-5">
+      <div class="h-16 w-16  bg-yellow-500">1</div>
+      <div class="h-16 w-16  bg-red-500">2</div>
+      <div class=" h-16 w-16 bg-pink-500">3</div>
+      <div class=" h-16 w-16 bg-pink-500">4</div>
+      <div class=" h-16 w-16 bg-pink-500">5</div>
+      <div class=" h-16 w-16 bg-pink-500">6</div>
+    </div>
+
+    <b>justify-between</b>
+    <div class=" grid grid-custom gap-4 justify-end	 bg-red-200 m-5">
+      <div class="h-16 w-16  bg-yellow-500">1</div>
+      <div class="h-16 w-16  bg-red-500">2</div>
+      <div class=" h-16 w-16 bg-pink-500">3</div>
+      <div class=" h-16 w-16 bg-pink-500">4</div>
+      <div class=" h-16 w-16 bg-pink-500">5</div>
+      <div class=" h-16 w-16 bg-pink-500">6</div>
+    </div>
+
+    <b>justify-between</b>
+    <div class=" grid grid-custom gap-4 justify-between	 bg-red-200 m-5">
+      <div class="h-16 w-16  bg-yellow-500">1</div>
+      <div class="h-16 w-16  bg-red-500">2</div>
+      <div class=" h-16 w-16 bg-pink-500">3</div>
+      <div class=" h-16 w-16 bg-pink-500">4</div>
+      <div class=" h-16 w-16 bg-pink-500">5</div>
+      <div class=" h-16 w-16 bg-pink-500">6</div>
+    </div>
+
+
+    <!-- ****************************** -->
+    <!--
+        Align Content
+        Justify whole grid in vertical direction
+        Utilities for controlling how rows are positioned in multi-row flex and grid containers.
+
+        content-center	    align-content: center;
+        content-start	    align-content: flex-start;
+        content-end	        align-content: flex-end;
+        content-between	    align-content: space-between;
+        content-around	    align-content: space-around;
+        content-evenly	    align-content: space-evenly;
+        content-baseline	align-content: baseline;
+     -->
+    <h1 class="text-green-600 text-5xl my-4">Align Content (Justify whole grid in vertical direction)</h1>
+    <b>content-center</b>
+    <div class="h-56 grid grid-cols-3 gap-4 content-center bg-red-200 m-5">
+      <div class="w-16 h-16 bg-yellow-500">1</div>
+      <div class="w-16 h-16 bg-red-500">2</div>
+      <div class="w-16 h-16 bg-pink-500">3</div>
+      <div class="w-16 h-16 bg-pink-500">4</div>
+      <div class="w-16 h-16 bg-pink-500">5</div>
+      <div class="w-16 h-16 bg-pink-500">6</div>
+    </div>
+
+    <b>content-end</b>
+    <div class="h-56 grid grid-cols-3 gap-4 content-end  bg-red-200 m-5">
+      <div class="w-16 h-16 bg-yellow-500">1</div>
+      <div class="w-16 h-16 bg-red-500">2</div>
+      <div class="w-16 h-16 bg-pink-500">3</div>
+      <div class="w-16 h-16 bg-pink-500">4</div>
+      <div class="w-16 h-16 bg-pink-500">5</div>
+      <div class="w-16 h-16 bg-pink-500">6</div>
+    </div>
+
+    <b>content-between</b>
+    <div class="h-56 grid grid-cols-3 gap-4 content-between  bg-red-200 m-5">
+      <div class="w-16 h-16 bg-yellow-500">1</div>
+      <div class="w-16 h-16 bg-red-500">2</div>
+      <div class="w-16 h-16 bg-pink-500">3</div>
+      <div class="w-16 h-16 bg-pink-500">4</div>
+      <div class="w-16 h-16 bg-pink-500">5</div>
+      <div class="w-16 h-16 bg-pink-500">6</div>
+    </div>
+
+
+  <!-- ****************************** -->
+    <!--
+
+    Justify Self
+    Horizontally change alignment of single element
+    Utilities for controlling how an individual grid item is aligned along its inline axis.
+
+    justify-self-auto	      justify-self: auto;   --  set according to grid value
+    justify-self-start	    justify-self: start;
+    justify-self-end	      justify-self: end;
+    justify-self-center	    justify-self: center;
+    justify-self-stretch	  justify-self: stretch;
+
+     -->
+
+    <h1 class="text-green-600 text-5xl my-4"> Justify Self ( Horizontally change alignment of single element )</h1>
+    <b>justify-self-end</b>
+    <div class="grid grid-cols-3 bg-red-200 m-5">
+      <div class="w-16 h-16 bg-yellow-500  ">1</div>
+      <div class="w-16 h-16 bg-red-500">2</div>
+      <div class="w-16 h-16 bg-pink-500 justify-self-end">3</div>
+    </div>
+
+    <b>justify-self-center	</b>
+    <div class="grid grid-cols-3 bg-red-200 m-5">
+      <div class="w-16 h-16 bg-yellow-500">1</div>
+      <div class="w-16 h-16 bg-red-500">2</div>
+      <div class="w-16 h-16 bg-pink-500 justify-self-center">3</div>
+    </div>
+
+    <b>justify-self-center	</b>
+    <div class="grid grid-cols-3    bg-red-200 m-5">
+      <div class="  h-16 bg-yellow-500">1</div>
+      <div class="  h-16 bg-red-500">2</div>
+      <div class="  h-16 bg-pink-500 justify-self-center">3</div>
+    </div>
+
+    <!-- ****************************** -->
+    <!--
+      Align Self
+      Utilities for controlling how an individual flex or grid item is positioned along its container's cross axis.
+
+      ​
+      self-auto	            align-self: auto;
+      self-start	          align-self: flex-start;
+      self-end	            align-self: flex-end;
+      self-center	          align-self: center;
+      self-stretch	        align-self: stretch;
+      self-baseline	        align-self: baseline;
+​     -->
+
+    <h1 class="text-green-600 text-5xl my-4"> Align Self ( Vertically change alignment of single element )</h1>
+    <b>self-start</b>
+    <div class="grid grid-cols-3 items-stretch m-5 bg-red-200 h-40">
+      <div class="bg-yellow-500">1</div>
+      <div class="bg-red-500">2</div>
+      <div class="bg-pink-500 self-start">3</div>
+    </div>
+
+    <b>self-center</b>
+    <div class="grid grid-cols-3 items-stretch m-5 bg-red-200 h-40">
+      <div class="bg-yellow-500">1</div>
+      <div class="bg-red-500">2</div>
+      <div class="bg-pink-500 self-center">3</div>
+    </div>
+
+
+    <b>self-end</b>
+    <div class="grid grid-cols-3 items-stretch m-5 bg-red-200 h-40">
+      <div class="bg-yellow-500">1</div>
+      <div class="bg-red-500">2</div>
+      <div class="bg-pink-500 self-end">3</div>
+    </div>
+
+    <!-- ******************************** -->
+
+  <h1 class="text-green-600 text-5xl my-4"> Practice</h1>
+  <div class="p-8 bg-amber-300">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-8">
+      <div class="p-4 bg-cyan-400 rounded-md flex items-center justify-center">1</div>
+      <div class="p-4 bg-cyan-400 rounded-md flex items-center justify-center">2</div>
+      <div class="p-4 bg-cyan-400 rounded-md flex items-center justify-center">3</div>
+      <div class="p-4 bg-cyan-400 rounded-md flex items-center justify-center">4</div>
+      <div class="p-4 bg-cyan-400 rounded-md flex items-center justify-center">5</div>
+      <div class="p-4 bg-cyan-400 rounded-md flex items-center justify-center">6</div>
+      <div class="p-4 bg-cyan-400 rounded-md flex items-center justify-center">7</div>
+      <div class="p-4 bg-cyan-400 rounded-md flex items-center justify-center">8</div>
+    </div>
+</div>
+
+
+
+</body>
+
+
+</html>
+
