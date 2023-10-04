@@ -1,0 +1,11 @@
+How to fix Unknown at rule @tailwindcss (unknownAtRules) in VS Code
+
+https://flaviocopes.com/fix-unknown-at-rule-tailwind/
+
+
+Open the settings, search for “unknown”, the first result should be the one you’re looking for: "CSS > Lint: Unknown At Rules"
+
+Change that to ignore:
+
+
+*******************************

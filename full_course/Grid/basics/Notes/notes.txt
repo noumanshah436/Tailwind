@@ -1,0 +1,12 @@
+
+1) npm i
+
+2) npm run start
+
+3) go to http://localhost:3000/0_simple_grid.html
+
+******************************
+
+Alternatively you can paste html body in tailwind play
+
+******************************

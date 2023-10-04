@@ -1,0 +1,30 @@
+Introduction to Tailwind CSS & Utility first Workflow: Tailwind Tutorial #1
+
+https://www.youtube.com/watch?v=L4_jarMnB0c&list=PLu0W_9lII9ahwFDuExCpPFHAK829Wto2O&index=1
+
+
+************************************************************************************************
+
+https://tailwindcss.com/docs/installation/using-postcss
+
+Installing Tailwind CSS as a PostCSS plugin:
+
+1) npm install -D tailwindcss postcss autoprefixer
+2) npm i vite
+
+3) npx tailwindcss init
+
+4) ....
+
+see postcss.png
+
+********************************
+
+start existing project:
+
+1) npm i
+
+2) npm run start
+
+3) go to http://localhost:3000/
+

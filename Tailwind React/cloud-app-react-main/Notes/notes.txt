@@ -1,0 +1,17 @@
+Build a React JS Website with Tailwind CSS - Beginner Tutorial Learning Tailwind CSS
+
+https://www.youtube.com/watch?v=TVQnhcVFTVs
+
+*************************************
+
+yarn create react-app cloud-app-react
+
+yarn start
+
+yarn add tailwindcss postcss autoprefixer
+
+*************************************
+
+npm start
+
+

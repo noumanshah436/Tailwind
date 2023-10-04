@@ -1,0 +1,33 @@
+
+https://tailwindcss.com/docs/guides/vite
+
+Install Tailwind CSS with Vite
+
+*************************
+npm create vite@latest charity-wave -- --template react
+cd charity-wave
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+code .
+npm run dev
+cat /home/dev/.npm/_logs/2023-10-04T18_41_26_677Z-debug.log
+npm run dev
+rm -rf node_modules
+npm i
+npm run dev
+
+*************************
+other libraries:
+
+npm install @heroicons/react@1.0.5
+
+https://heroicons.com/
+https://github.com/tailwindlabs/heroicons
+
+************
+
+npm install react-icons
+
+https://www.npmjs.com/package/react-icons
+
+*************************

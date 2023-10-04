@@ -1,0 +1,33 @@
+
+1) see harry folder for setup (using tailwind PostCSS plugin)
+
+1) Go through the PDF
+
+2) Watch this Tutorial (using tailwind playground)
+
+Tailwind CSS Tutorial for Beginners - Full Course (scrimba)
+https://www.youtube.com/watch?v=4wGmylafgM4
+
+00:00:00 - Welcome to the Tailwind CSS course
+00:04:16 - Background Classes & Shades
+00:08:40 - Element Sizing & Tailwind's Numbering System
+00:14:51 - Shades of Blue Challenge
+00:17:07 - Padding & Margins
+00:22:45 - Styling Text Part 1
+00:28:45 - Styling Text Part 2
+00:35:15 - Text Styling
+00:41:28 - Borders
+00:49:03 - The Buttons Challenge
+00:55:43 - Display Modes
+00:57:43 - Flexbox
+01:09:36 - Block Gallery Challenge
+01:15:41 - Responsive Design
+01:23:18 - Hover Modifier
+01:25:35 - Focus Modifier
+01:27:21 - Combination Modifier
+01:29:14 - Other Utilities
+01:35:11 - Input Component Challenge
+01:39:01 - Employee Card Challenge
+01:50:19 - Final Course Project - Landing Page
+02:30:36 - It's A Wrap!
+
