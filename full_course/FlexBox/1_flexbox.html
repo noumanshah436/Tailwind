@@ -27,9 +27,11 @@
 
     <!-- ****************************** -->
     <!--
-        Justify Content
-        Justify whole grid in Horizontal direction (for flex in row direction)
-        Utilities for controlling how flex and grid items are positioned along a container's main axis.
+        Justify Content:
+        This property defines the alignment of flex items along the main axis of the flex container.
+        (in flex row (default flex direction), justify-content aligns items horizontally and In flex column, it aligns items vertically.)
+
+        The justify-content: center; property in a Flexbox container is used to horizontally center the flex items along the main axis
 
         // Default direction - horizontal alignment
         .justify-start {}
@@ -73,9 +75,15 @@
     <!--
 
         Aign Items: Vertical Alignment (for flex in row direction)
-        Utilities for controlling how flex and grid items are positioned along the cross axis.
+        This property defines the alignment of flex items along the cross axis of the flex container.
+        (in flex row (default), align-items aligns items vertically and In flex column, it aligns items horizontally.)
+
+
         Note: when you do flex box with vertical alignment,the container needs to have a proper height.
         (By default all container take up their entire width but they don't take up their entire height.)
+
+        When you set align-items: center; in a flex container, it means that the items inside the container will be vertically centered along the cross axis.
+        align-items: center; property, when applied to a flex container, affects the alignment of its direct child items, not the items within those child items
 
         // Default direction - vertical alignment
         .items-stretch {}
@@ -111,6 +119,36 @@
        <p class="text-5xl">Hello there.</p>
      </div>
 
+    <!-- ****************************** -->
+
+     <!-- Note: To align the entire Flexbox container itself within its parent container or available space,
+      you typically use properties from the parent container, not the Flexbox container itself. -->
+
+    <!-- ****************************** -->
+
+    <!--
+      align-content: (not used much)
+
+      Applies to: Flex containers with multiple lines (multi-line flex containers) using flex-wrap.
+      Values: flex-start, flex-end, center, space-between, space-around, stretch
+      Description: Aligns the flex lines (rows if the main axis is horizontal, columns if the main axis is vertical) within the flex container along the cross axis.
+
+      A multi-line flex container refers to a flex container that allows its flex items to be displayed on multiple lines rather than a single line.
+      In a multi-line flex container, when the available space is not enough to fit all flex items on a single line, the items are wrapped onto additional lines.
+
+      This behavior is controlled by the flex-wrap property.
+      When flex-wrap is set to nowrap (the default), the flex container is a single-line container, and flex items are not allowed to wrap onto new lines.
+      However, when flex-wrap is set to wrap or wrap-reverse, the container becomes a multi-line container, and items may wrap to the next line if there isn't enough space.
+
+    -->
+
+    <h1 class="mb-4 text-2xl font-bold">The align-content Property</h1>
+
+    <div id="main" class="flex h-48 w-full flex-wrap content-between bg-slate-500">
+      <div class="bg-coral h-12 w-full bg-red-200">1</div>
+      <div class="bg-lightblue h-12 w-full bg-red-600">2</div>
+      <div class="bg-pink h-12 w-full bg-red-950">3</div>
+    </div>
 
 
     <!-- ****************************** -->

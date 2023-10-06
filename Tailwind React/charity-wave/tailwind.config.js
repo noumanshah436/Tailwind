@@ -3,10 +3,21 @@ export default {
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
+    "./src/components/**/*.{js,ts,jsx,tsx}",
+    // "./src/**/**/*.{js,ts,jsx,tsx}",
     "*"
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        // Primary color
+        primary: '#0f172a',
+
+        // Primary shades
+        // text-indigo-800
+        'primary-light': '#3730a3',
+      },
+    },
     screens: {
       sm: '640px',
       // => @media (min-width: 640px) { ... }
