@@ -1,3 +1,9 @@
+$ node -v
+v20.8.0
+$ npm -v
+10.2.0
+
+********************************
 
 https://tailwindcss.com/docs/guides/vite
 

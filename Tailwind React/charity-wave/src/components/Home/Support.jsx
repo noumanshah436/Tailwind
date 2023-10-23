@@ -1,5 +1,5 @@
 import React from "react";
-import Typed from "react-typed";
+// import Typed from "react-typed";
 import supportImg from "../../assets/support2.jpg";
 
 const Support = () => {
@@ -7,17 +7,14 @@ const Support = () => {
     <div name="support" className="w-full relative">
       <div className="w-full h-screen bg-gray-900/90">
         <img
-          className="w-full h-full object-cover mix-blend-overlay"
+          className="w-full h-full object-cover mix-blend-soft-light"
           src={supportImg}
           alt="/"
         />
       </div>
 
-      <div className="lg:max-w-[500px] text-white absolute top-2/3 md:top-1/2  left-1/2 transform -translate-x-1/2 -translate-y-2/3 md:-translate-y-1/2 md:left-2/3 md:-translate-x-1/3 ">
+      <div className="lg:max-w-[500px] text-white  absolute top-2/3 md:top-1/2  left-1/2 transform -translate-x-1/2 -translate-y-2/3 md:-translate-y-1/2 md:left-2/3 md:-translate-x-1/3 ">
         <div className="flex flex-col">
-          {/* <h2 className="text-3xl pt-8 text-slate-300 uppercase text-center">
-            Support
-          </h2> */}
           <h3 className="leading-tight tracking-wide font-medium text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
             Give a helping hand to those who need it!
           </h3>
@@ -25,7 +22,7 @@ const Support = () => {
             When a child gets access to good food, it can change just about
             everything
           </p>
-          <button className="px-8 py-3 my-9 w-1/2 rounded-none hover:text-white hover:border-white">Donate</button>
+          <button className="px-8 py-3 my-9 w-1/2 rounded-none bg-primary border-primary hover:text-white hover:border-white">Donate</button>
         </div>
       </div>
     </div>

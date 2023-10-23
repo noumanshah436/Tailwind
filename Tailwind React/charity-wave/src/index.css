@@ -8,9 +8,10 @@
   }
 
   button {
-    @apply text-white border bg-primary-light border-indigo-800
+    @apply text-white border bg-primary-light hover:border-primary-light
     hover:bg-transparent hover:text-primary-light rounded-md
 
   }
 }
 /* text-primary-light */
+

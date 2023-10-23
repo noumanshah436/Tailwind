@@ -1,9 +1,11 @@
 import React from "react";
+import OurPartners from "./Partners"
 
 const About = () => {
   return (
     <div name="about" className="w-full my-32">
-      <div className="max-w-[1240px] mx-auto">
+      <OurPartners/>
+      {/* <div className="max-w-[1240px] mx-auto">
         <div className="text-center">
           <h2 className="text-5xl font-bold">Trusted all across the world</h2>
           <p className="text-3xl py-6 text-gray-500">
@@ -26,7 +28,7 @@ const About = () => {
             <p className="text-gray-400 mt-2">Grants</p>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
